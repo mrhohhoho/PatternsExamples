@@ -3,6 +3,9 @@ public class DemoSingleThread {
         System.out.println("Hello world! \n");
 
         Singleton singleton = Singleton.getInstance("FIRST");
-        S
+        Singleton anotherSingleton = Singleton.getInstance("SECOND");
+
+        System.out.println(singleton.value);
+        System.out.println(anotherSingleton.value);
     }
 }
